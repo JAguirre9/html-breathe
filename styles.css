@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+}
+:root {
+    --primary-color: #b3d2e3;   /* Blue */
+    --secondary-color: #c7bbf2; /* Purple */
+    --text-color: #333333; /* Dark Gray */
+    --background-color: #f5f5f5; /* Light Gray */
+}
+
+#logo-main{
+    width: 350px;
+}
+
+#slogan{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.top-main{
+    display: inline-block;
+}
+
+.main-page{
+    margin-right: 20px;
+}

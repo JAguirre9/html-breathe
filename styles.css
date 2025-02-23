@@ -1,24 +1,37 @@
 *{
     margin: 0;
+    background: linear-gradient(to right, var(--note4-color), white);
 }
 :root {
-    --primary-color: #b3d2e3;   /* Blue */
-    --secondary-color: #c7bbf2; /* Purple */
+    --primary-color: #c7bbf2;   /* Purple */
+    --secondary-color: #b3d2e3; /* Blue */
     --text-color: #333333; /* Dark Gray */
-    --background-color: #f5f5f5; /* Light Gray */
+    --note1-color: #a0c7e0; /* Light blue */
+    --note2-color: #f7e6dc; /* Peach Fuzz */
+    --note3-color: #def0f9; /* lighter blue */
+    --note4-color: #e6e4f9; /* Light Purple */
+    --background-color: #F5F3FF; /* Almost White with a Purple Tint */
 }
 
 #logo-main{
-    width: 350px;
+    width: 20em;
+    background: none;
 }
 
 #slogan{
     background-color: var(--primary-color);
     color: var(--text-color);
     text-align: center;
+    height: 1.5em;
 }
 
 .top-main{
+    display: inline-block;
+    float: right;
+    background: none;
+}
+
+.top-main li{
     display: inline-block;
 }
 

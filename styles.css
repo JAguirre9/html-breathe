@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    background: linear-gradient(to right, var(--note4-color), white);
 }
 :root {
     --primary-color: #c7bbf2;   /* Purple */
@@ -13,22 +12,17 @@
     --background-color: #F5F3FF; /* Almost White with a Purple Tint */
 }
 
+.header{
+    background: linear-gradient(to right, var(--background-color,--note3-color));
+}
+
 #logo-main{
     width: 20em;
     background: none;
 }
 
-#slogan{
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    text-align: center;
-    height: 1.5em;
-}
-
 .top-main{
-    display: inline-block;
-    float: right;
-    background: none;
+    display: flex;
 }
 
 .top-main li{

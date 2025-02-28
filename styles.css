@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 :root {
     --primary-color: #c7bbf2;   /* Purple */
@@ -12,12 +14,14 @@
     --background-color: #F5F3FF; /* Almost White with a Purple Tint */
 }
 
-.header{
-    background: white;
+body{
+    background: linear-gradient(to right, var(--background-color,--note3-color));
 }
 
-.body{
-    background: linear-gradient(to right, var(--background-color,--note3-color));
+header{
+    display: flex;
+    background: white;
+    
 }
 
 .logo-main img{
@@ -30,12 +34,54 @@
 
 .top-main{
     display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
 }
 
 .top-main li{
-    display: inline-block;
+    margin: 10px;
+    list-style: none;
+}
+
+.top-main a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 10px;
 }
 
 .main-page{
     margin-right: 20px;
 }
+
+.br-services {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+    justify-content: center;
+}
+
+.br-services li {
+    margin: 10px; 
+}
+
+.br-services a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    width: 250px;
+    height: 250px;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 10px;
+    font-weight: bold;
+}
+

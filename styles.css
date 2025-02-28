@@ -13,12 +13,19 @@
 }
 
 .header{
+    background: white;
+}
+
+.body{
     background: linear-gradient(to right, var(--background-color,--note3-color));
 }
 
-#logo-main{
-    width: 20em;
-    background: none;
+.logo-main img{
+    width: 5em;
+}
+
+#breathe-lett{
+    margin-bottom: 18px;
 }
 
 .top-main{

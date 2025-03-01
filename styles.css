@@ -1,50 +1,55 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --primary-color: #c7bbf2;   /* Purple */
     --secondary-color: #b3d2e3; /* Blue */
     --text-color: #333333; /* Dark Gray */
     --note1-color: #a0c7e0; /* Light blue */
     --note2-color: #f7e6dc; /* Peach Fuzz */
-    --note3-color: #def0f9; /* lighter blue */
+    --note3-color: #def0f9; /* Lighter blue */
     --note4-color: #e6e4f9; /* Light Purple */
     --background-color: #F5F3FF; /* Almost White with a Purple Tint */
 }
 
-body{
-    background: linear-gradient(to right, var(--background-color,--note3-color));
+body {
+    background: linear-gradient(to right, var(--background-color), var(--note3-color));
+   /*  font-family: Arial, sans-serif;
+ */    text-align: center;
 }
 
-header{
+header {
     display: flex;
+    align-items: center;
+    gap: 15px;
     background: white;
-    
+    padding: 20px;
 }
 
-.logo-main img{
+.logo-main img {
     width: 5em;
+    flex-direction: row-reverse;
 }
 
-#breathe-lett{
+#breathe-lett {
     margin-bottom: 18px;
 }
 
-.top-main{
+.top-main {
     display: flex;
     list-style: none;
     padding: 0;
     gap: 10px;
 }
 
-.top-main li{
-    margin: 10px;
+.top-main li {
     list-style: none;
 }
 
-.top-main a{
+.top-main a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,34 +59,36 @@ header{
     text-decoration: none;
     color: var(--text-color);
     border-radius: 10px;
-}
-
-.main-page{
-    margin-right: 20px;
+    font-weight: bold;
 }
 
 .br-services {
     display: flex;
-    list-style: none;
-    padding: 0;
-    gap: 10px;
     justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
 }
 
-.br-services li {
-    margin: 10px; 
-}
-
-.br-services a {
+.br-service-box {
+    background-color: var(--note1-color);
+    width: 200px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary-color);
-    width: 250px;
-    height: 250px;
     text-decoration: none;
     color: var(--text-color);
-    border-radius: 10px;
     font-weight: bold;
+    border-radius: 10px;
 }
 
+.br-service-link {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+}
